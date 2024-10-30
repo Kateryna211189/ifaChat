@@ -1,0 +1,60 @@
+body {
+    background-color: #f8f9fa;
+}
+#clientList {
+    border: 1px solid #ddd;
+    padding: 10px;
+    max-width: 200px;
+    color: aquamarine;
+}
+#popup {
+    display: none;
+    /* Masqué par défaut */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(157, 142, 142);
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+}
+#messagesPublic,
+#messagesPrivate {
+    max-height: 400px;
+    overflow-y: auto;
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#saisie {
+    margin-bottom: 20px;
+}
+
+#textPublic,
+#textPrivatePopup {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#sendPublic,
+#sendPrivatePopup {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#sendPublic:hover,
+#sendPrivatePopup:hover {
+    background-color: #0056b3;
+}
+
+
+.newMessage {
+    border-bottom: 1px solid #e9ecef;
+    padding: 5px 0;
+}
